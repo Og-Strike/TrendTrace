@@ -518,7 +518,7 @@ MDBoxLayout:
     def get_data(self, column,datef,datet):
         scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
         current_directory = os.path.dirname(os.path.abspath(__file__))
-        cred = os.path.join(current_directory, r'')
+        cred = os.path.join(current_directory, 'Put credential JSON path here')
         creds = ServiceAccountCredentials.from_json_keyfile_name(cred, scope)
         client = gspread.authorize(creds)
         file = self.root.ids.text_input12.text.strip()
@@ -581,7 +581,7 @@ MDBoxLayout:
     def load_data(self,file):
         scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
         current_directory = os.path.dirname(os.path.abspath(__file__))
-        cred = os.path.join(current_directory, '')
+        cred = os.path.join(current_directory, 'Put credential JSON path here')
         creds = ServiceAccountCredentials.from_json_keyfile_name(cred, scope)
         client = gspread.authorize(creds)
         sheet = client.open(file).sheet1
