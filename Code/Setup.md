@@ -46,6 +46,15 @@ Follow the steps below to set up the Gemini API and Google Sheets (Gspread) inte
    cred = ServiceAccountCredentials.from_json_keyfile_name("path/to/project_name.json", scope)
    ```
 
+## 📌 Step 5: Run the Application from the Correct Directory
+
+1. Before running the project, make sure you are in the correct directory where your project files are saved.
+2. Open your terminal or command prompt.
+3. Use the `cd` (change directory) command to navigate to the folder containing your project. For example:
+
+   ```bash
+   cd path/to/your/project
+
 ---
 
 ✅ **You're all set!** The system should now be able to read from and write to your Google Sheets using the configured APIs.
